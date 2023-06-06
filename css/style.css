@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fixed {
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/*псевдоэлемент*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.header {
+    padding: 30px 0;
+}
+
+/*меню навигации*/
+.top_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    width: 45px;
+    height: 32px;
+    background-image: url("../img/mob/burger.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.list_class {
+    display: inline-block;
+}
+
+.nav_link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f1f24;
+    margin-right: 30px;
+}
+
+
+/*блок с телефоном*/
+.phone {
+    margin-left: auto;
+    margin-right: 20px;
+    color: #1f1f24;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/*кнопка для телефона*/
+.button_tel {
+    margin-left: 30px;
+}
+
+.btn {
+    width: 207px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #f53f4f;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn_head {
+    border: 1px solid #f82370;
+}
+
+.header_btn {
+    margin-left: 28px;
+}
+
+.header_btn:hover {
+    color: white;
+    background-color: #f82370;
+    border: 1px solid #f82370;
+}
+
+
+/*центральный блок с картинкой*/
+.central_block {
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+
+/*летающие символы*/
+.fly_tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.fly_tag-braces {
+    font-size: 47px;
+    transform: rotate(30deg);
+    left: 122px;
+    top: 30px;
+}
+
+.fly_tag-div {
+    font-size: 31px;
+    transform: rotate(-13deg);
+    left: 776px;
+    top: 60px;
+}
+
+.fly_tag-hash {
+    font-size: 60px;
+    transform: rotate(17deg);
+    left: 237px;
+    top: 295px;
+}
+
+.fly_tag-div2 {
+    font-size: 40px;
+    transform: rotate(17deg);
+    left: 940px;
+    top: auto;
+    bottom: 185px;
+}
+
+.fly_tag-closed {
+    font-size: 42px;
+    transform: rotate(-20deg);
+    left: 368px;
+    top: auto;
+    bottom: 55px;
+}
+
+.fly_tag-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.fly_tag-braces-main {
+    font-size: 47px;
+    transform: rotate(30deg);
+    left: 30px;
+    top: 10px;
+}
+
+.fly_tag-div-main {
+    font-size: 35px;
+    transform: rotate(-13deg);
+    left: 930px;
+    top: 35px;
+}
+
+.fly_tag-hash-main {
+    font-size: 60px;
+    transform: rotate(17deg);
+    left: -110px;
+    top: 100px;
+}
+
+.fly_tag-div2-main {
+    font-size: 40px;
+    transform: rotate(17deg);
+    left: 1250px;
+    top: auto;
+    bottom: 150px;
+}
+
+.fly_tag-closed-main {
+    font-size: 42px;
+    transform: rotate(-20deg);
+    left: 1200px;
+    top: auto;
+    bottom: 55px;
+}
+
+.about_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*обо мне*/
+.about_info {
+    padding-top: 153px;
+    position: relative;
+    z-index: 1;
+}
+
+.info_title {
+    color: #1f1f24;
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 45px;
+    white-space: nowrap;
+}
+
+.info_desc {
+    color: #8993ad;
+    font-size: 25px;
+    font-weight: 400;
+    display: block;
+    margin-top: 14px;
+}
+
+.btn_fill {
+    background-color: #ff4e2e;
+    color: #fff;
+    width: 270px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+}
+
+.about_img {
+    margin-right: -140px;
+    position: relative;
+    z-index: 1;
+}
+
+.about_svg {
+    width: 815px;
+    height: 630px;
+    position: absolute;
+    right: -9px;
+    bottom: 0;
+    z-index: 0;
+    background-image: url(../img/desctop/ellipse-svg.svg);
+}
+
+.about_btn:hover {
+    color: #ff4e2e;
+    background-color: white;
+    border: 1px solid #ff4e2e;
+}
+
+/* */
+
+/*"что делаю*/
+.main_block {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.doing_list-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.doing_list-item {
+    margin-bottom: 50px;
+}
+
+.doing_block {
+    width: 250px;
+    min-height: 000px;
+    padding: 170px 15px 30px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-size: 100px 100px;
+    text-align: center;
+    font-size: 18px;
+    color: #8993ad;
+}
+
+.doing_desc {
+    color: #8993ad;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 54px;
+}
+
+.doing_img {
+    margin: auto;
+    display: block;
+}
+
+.btn_main {
+    margin: auto;
+    display: block;
+}
+
+/**/
+
+/**/
+
+.ad_h3 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+    margin: 20px auto;
+    text-align: start;
+}
+
+.ad_span {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.advertising_bot {
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+
+    background: linear-gradient(45deg, #ff8f5a, #ff3095);
+}
+
+.advertising_text {
+    padding: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*секция примеры работ*/
+
+.work {
+    padding: 100px 0;
+}
+
+.work_list {
+    margin: 0 10px;
+    width: 33%;
+}
+
+.work_img {
+    height: 80%;
+}
+
+.btn_work-left {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-image: url(../img/desctop/arrow1.png);
+    position: absolute;
+    top: 110px;
+    left: -20px;
+
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5)
+}
+
+.btn_work-right {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-image: url(../img/desctop/arrow2.png);
+    position: absolute;
+    top: 110px;
+    left: 1130px;
+
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5)
+}
+
+.work_text {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.btn_work {
+    margin: auto;
+    display: block;
+}
+
+
+/*footer*/
+.footer_top {
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_list {
+    padding: 5px 0;
+}
+
+.footer_list a {
+    color: #8993ad;
+}
+
+.footer_contact {
+    display: grid;
+}
+
+.footer_contact a {
+    font-size: 25px;
+    color: black;
+    vertical-align: bottom;
+}
+
+.footer_btn:hover {
+    color: white;
+    background-color: #f82370;
+    border: 1px solid #f82370;
+}
+
+.nav_list a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+.footer_list a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+.phone:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+.footer_contact a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+.social {
+    margin-top: 10px;
+    display: flex;
+}
+
+.social a {
+
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ .vk{
+    background-image: url("../img/desctop/mess/vk.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+  }
+
+  .vk:hover {
+    background-image: url("../img/desctop/mess/vkHover.png");
+    /* остальные свойства при наведении */
+  }
+
+  .fb{
+    background-image: url("../img/desctop/mess/tg.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+  }
+  .fb:hover {
+    background-image: url("../img/desctop/mess/tgHover.png");
+    /* остальные свойства при наведении */
+  }
+
+  .inst{
+    background-image: url("../img/desctop/mess/whatsapp.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+  }
+
+  .inst:hover {
+    background-image: url("../img/desctop/mess/whatsappHover.png");
+    /* остальные свойства при наведении */
+  }
+
+.social a:hover {
+    background-position-y: bottom;
+}
+
+.social a {
+    transition: all 0.2s ease-out;
+}
+
+
+/*footer bot*/
+.footer_bot {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: #31293c;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+.icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    color: black;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.mail,
+.tel {
+    line-height: 24px;
+}
+
+.doing_list-1 {
+    background-image: url('../img/desctop/tools-and-utensils.png');
+}
+
+.doing_list-2 {
+    background-image: url('../img/desctop/responsive.png');
+}
+
+.doing_list-3 {
+    background-image: url('../img/desctop/programming.png');
+}
+
+.doing_list-4 {
+    background-image: url('../img/desctop/coding.png');
+}
+
+.scroll-to-top-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: url(../img/desctop/arrow2.png);
+    background-position: center center;
+    background-size: contain;
+    transform: rotate(-90deg);
+    z-index: 9999; /* Значение z-index */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .popup h2 {
+    margin-bottom: 10px;
+  }
+  
+  .popup-close {
+    background-color: #BB1E99;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-close:hover {
+    background-color: #800080;
+  }
+  
