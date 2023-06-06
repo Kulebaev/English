@@ -26,6 +26,8 @@ header('Content-Type: text/html; charset=utf-8');
 </head>
 
 <body>
+
+	
 	<div class="main_conteiner">
 		<header class="header">
 			<div class="top_block fixed">
@@ -60,7 +62,7 @@ header('Content-Type: text/html; charset=utf-8');
 						</li>
 					</ul>
 				</div>
-				<button class="btn btn_head header_btn btn-reset">Записаться на занятие</button>
+				<button class="btn btn_head header_btn btn-reset" onclick="openPopup()">Записаться на занятие</button>
 			</div>
 		</header>
 		<section class="central_block">
@@ -102,6 +104,10 @@ header('Content-Type: text/html; charset=utf-8');
 				<button class="btn_main btn_fill about_btn btn-reset">Узнать уровень Английского</button>
 			</div>
 		</section>
+
+		<div id="popup-container" class="popup-container">
+					<?php include 'popup.php'; ?>
+				</div>
 		<section id="portfolio" class="work">
 			<div class="work_main fixed">
 				<h2 class="work_h2-main">Нас объединяет любовь к английскому языку​​​​​​​</h2>

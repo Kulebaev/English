@@ -55,6 +55,17 @@ function setupSmoothScroll() {
 	});
 }
 
+function openPopup() {
+	var popupContainer = document.getElementById('popup-container');
+	popupContainer.style.display = 'flex';
+  }
+  
+  function closePopup() {
+	var popupContainer = document.getElementById('popup-container');
+	popupContainer.style.display = 'none';
+  }
+  
+
 // Вызов функций для настройки
 setupSmoothScroll();
 setupScrollToTopButton();

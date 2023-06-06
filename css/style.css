@@ -601,7 +601,7 @@ h2 {
     z-index: 9999; /* Значение z-index */
 }
 
-.popup {
+.popup-container {
     display: none;
     position: fixed;
     top: 0;
@@ -613,30 +613,41 @@ h2 {
   }
   
   .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
     text-align: center;
   }
   
-  .popup h2 {
+  .popup-content input[type="text"],
+  .popup-content input[type="tel"],
+  .popup-content input[type="email"] {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
   }
   
-  .popup-close {
-    background-color: #BB1E99;
+  .popup-content button {
+    padding: 10px 20px;
+    background-color: #f82370;
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 10px;
   }
   
-  .popup-close:hover {
-    background-color: #800080;
+  .popup-content button:last-child {
+    margin-right: 0;
+  }
+  
+  .popup-content button:hover {
+    background-color: #ff4e2e;
   }
   
